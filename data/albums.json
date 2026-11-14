@@ -17,15 +17,15 @@
     "id": "swing-s2",
     "lineage": "swing",
     "role": "starter",
-    "title": "Ellington at Newport",
-    "artist": "Duke Ellington",
-    "blurb": "관객이 들썩이는 1956년 페스티벌 실황으로, 스윙의 열기가 그대로 담겨 있어요.",
-    "buyUrl": "https://www.yes24.com/product/goods/119563273",
+    "title": "Sinatra–Basie",
+    "artist": "Frank Sinatra & Count Basie",
+    "blurb": "베이시 악단의 탄탄한 스윙 위에 시나트라의 노래가 얹힌 판으로, 빅밴드를 가장 쉽게 즐길 수 있어요.",
+    "buyUrl": "https://www.yes24.com/product/goods/108789573",
     "checkedAt": "2026-11-14",
-    "mood": "strong",
+    "mood": "bright",
     "tempo": "mid",
-    "instrument": "빅밴드",
-    "vocal": false
+    "instrument": "목소리",
+    "vocal": true
   },
   {
     "id": "swing-s3",
