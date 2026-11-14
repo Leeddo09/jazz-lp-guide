@@ -1,0 +1,37 @@
+[
+  {
+    "id": "l1",
+    "name": "계열 1",
+    "description": "계열 1 설명"
+  },
+  {
+    "id": "l2",
+    "name": "계열 2",
+    "description": "계열 2 설명"
+  },
+  {
+    "id": "l3",
+    "name": "계열 3",
+    "description": "계열 3 설명"
+  },
+  {
+    "id": "l4",
+    "name": "계열 4",
+    "description": "계열 4 설명"
+  },
+  {
+    "id": "l5",
+    "name": "계열 5",
+    "description": "계열 5 설명"
+  },
+  {
+    "id": "l6",
+    "name": "계열 6",
+    "description": "계열 6 설명"
+  },
+  {
+    "id": "l7",
+    "name": "계열 7",
+    "description": "계열 7 설명"
+  }
+]

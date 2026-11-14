@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>재즈 LP 길잡이 — 내 취향의 첫 판 찾기</title>
+  <meta name="description" content="재즈 곡을 듣고 고르면 취향에 맞는 계열과 처음 살 만한 LP를 알려 드려요.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 기록 도구(Google Analytics 4). 측정 ID를 실제 값으로 바꾸면 켜진다. -->
+  <script>
+    const GA_ID = 'G-XXXXXXXXXX';
+    if (!GA_ID.endsWith('XXXXXXXXXX')) {
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <span class="logo" aria-hidden="true"></span>
+    <span class="site-name">재즈 LP 길잡이</span>
+  </header>
+
+  <main>
+    <section id="screen-start" hidden>
+      <h1>재즈, 어디서부터 들어야 할지 모르겠다면</h1>
+      <p class="lead">14곡을 조금씩 듣고 좋은지 아닌지만 골라 주세요. 취향에 가까운 재즈 계열과 처음 살 만한 LP를 알려 드려요.</p>
+      <ul class="facts">
+        <li>5분 안팎</li>
+        <li>가입 없음</li>
+        <li>끝까지 안 듣고 넘겨도 돼요</li>
+      </ul>
+      <button id="start" class="primary">시작하기</button>
+    </section>
+
+    <section id="screen-listen" hidden>
+      <p id="progress" class="progress" aria-live="polite"></p>
+      <div class="player-frame">
+        <div id="player"></div>
+        <p id="player-note" class="player-note" hidden></p>
+      </div>
+      <p class="question">이 곡, 어때요?</p>
+      <div id="answers" class="answers">
+        <button id="like" class="answer like">좋아요</button>
+        <button id="dislike" class="answer">별로예요</button>
+        <button id="skip" class="answer quiet">모르겠어요</button>
+      </div>
+      <button id="next-track" class="primary" hidden>다음 곡</button>
+      <p id="previous" class="previous"></p>
+    </section>
+
+    <section id="screen-result" hidden>
+      <p id="shared-label" class="tag" hidden>공유받은 결과</p>
+      <h1 id="result-title"></h1>
+      <p id="sentence" class="lead"></p>
+      <div id="results"></div>
+
+      <div id="feedback" class="feedback" hidden>
+        <p>이 결과, 맞는 것 같나요?</p>
+        <div class="answers">
+          <button id="fb-yes" class="answer">맞는 것 같아요</button>
+          <button id="fb-no" class="answer">아닌 것 같아요</button>
+        </div>
+        <p id="fb-thanks" class="note" hidden>알려 주셔서 고마워요. 추천을 고치는 데 쓸게요.</p>
+      </div>
+
+      <div class="result-actions">
+        <button id="share" class="answer" hidden>결과 링크 복사</button>
+        <button id="restart" class="answer quiet">처음부터 다시</button>
+      </div>
+      <p id="share-done" class="note" hidden></p>
+    </section>
+
+    <section id="screen-error" hidden>
+      <h1>목록을 불러오지 못했어요</h1>
+      <p class="lead">인터넷 연결을 확인하고 다시 시도해 주세요.</p>
+      <button id="retry" class="primary">다시 시도</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>구매 링크로 판을 사시면 운영자가 수수료를 받을 수 있어요.</p>
+    <p>청음은 유튜브 공식 영상으로 재생돼요.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
